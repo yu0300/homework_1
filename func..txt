@@ -1,0 +1,16 @@
+list1 = [i for i in range(1, 101)]
+def pi_string(list):
+    res=[]
+    for i in range (len (list)):
+        if (list[i] % 3)==0:
+            temp = str(round(list[i]*3.14))
+            res.append(temp)
+    
+        else:
+             res.append(list1[i])
+    return res
+list2 = pi_string(list1)
+
+#print(str(datetime.datetime.utcnow()))
+            
+print(list2)            
